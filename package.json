@@ -1,0 +1,9 @@
+{
+  "name": "learnify",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm start --prefix client\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
