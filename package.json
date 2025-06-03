@@ -1,16 +1,13 @@
 {
   "name": "learnify",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.2",
-    "nodemon": "^2.0.22"
+    "build": "npm install --prefix client && npm run build --prefix client",
+    "start": "node server/index.js"
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "dependencies": {}
 }
