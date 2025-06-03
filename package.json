@@ -1,13 +1,20 @@
 {
   "name": "learnify",
   "version": "1.0.0",
-  "private": true,
+  "main": "index.js",
   "scripts": {
     "build": "npm install --prefix client && npm run build --prefix client",
     "start": "node server/index.js"
   },
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "mongoose": "^7.6.3",
+    "nodemon": "^3.1.10"
+  },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "dependencies": {}
+  }
 }
